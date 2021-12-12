@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment method</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="payment_body">
+    <div class="wrapper">
+        <div class="Payment">
+
+            <h2> Thank you!</h2>
+            <div class="form">
+                <div class="card space icon-relative">
+                    <label class="label"> Card Holder:</label>
+                    <input type="text" class="input" name="card_holder" placeholder="John Smith">
+
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label"> Card Number:</label>
+                    <input type="text" class="input" name="card_number" placeholder="Card Number"
+                        data-mask="0000 0000 0000 0000">
+                </div>
+                <div class="crd-grp space ">
+                    <div class="card-item icon-relative">
+                        <label class="label"> Expiry Date:</label>
+                        <input type="text" class="input" name="expiry_date" placeholder="00 / 00" data-mask="00/00">
+                    </div>
+                    <div class="card-item icon-relative">
+                        <label class="label"> CVC:</label>
+                        <input type="text" class="input" name="cvc" placeholder="000" data-mask="000">
+                    </div>
+                </div>
+                <button class=" btn btn-buy">PAY</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+</body>
+
+</html>
